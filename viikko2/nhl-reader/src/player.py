@@ -7,4 +7,4 @@ class Player:
         self.nationality = dict['nationality']
 
     def __str__(self):
-        return f"{self.name} team {self.team} goals {self.goals} assists {self.assists}"
+        return f"{self.name}  {self.team}  {self.goals} + {self.assists} = {(self.goals)+(self.assists)}"
