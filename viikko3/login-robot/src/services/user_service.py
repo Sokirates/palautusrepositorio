@@ -47,7 +47,7 @@ class UserService:
         if re.match("^[a-z]+$", username) is None:
             raise ValueError("Username should contain only lowercase letters")
 
-        if len(password) < 8 is None:
+        if len(password) < 8:
             raise ValueError("Password should be at least 8 letters long")
 
         if re.match(".*[^a-z].*", password) is None:

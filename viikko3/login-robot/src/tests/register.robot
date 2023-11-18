@@ -24,7 +24,7 @@ Register With Enough Long But Invalid Username And Valid Password
 
 Register With Valid Username And Too Short Password
     Input Credentials  kayttaja  aa
-    Output Should Contain  Password should not contain only letters
+    Output Should Contain  Password should be at least 8 letters long
 
 Register With Valid Username And Long Enough Password Containing Only Letters
     Input Credentials  kaapo  vaarasalasana
