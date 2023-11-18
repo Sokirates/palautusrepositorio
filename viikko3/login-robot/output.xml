@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on linux)" generated="20231118 15:53:21.894" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="/home/tasoki/palautusrepositorio/viikko3/login-robot/src/tests">
+<suite id="s1-s1" name="Login" source="/home/tasoki/palautusrepositorio/viikko3/login-robot/src/tests/login.robot">
+<test id="s1-s1-t1" name="Login With Correct Credentials" line="6">
+<kw name="Create User And Input Login Command" type="SETUP">
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" starttime="20231118 15:53:21.931" endtime="20231118 15:53:21.931"/>
+</kw>
+<kw name="Input Login Command" library="resource">
+<kw name="Input" library="AppLibrary">
+<arg>login</arg>
+<status status="PASS" starttime="20231118 15:53:21.931" endtime="20231118 15:53:21.931"/>
+</kw>
+<status status="PASS" starttime="20231118 15:53:21.931" endtime="20231118 15:53:21.931"/>
+</kw>
+<status status="PASS" starttime="20231118 15:53:21.930" endtime="20231118 15:53:21.931"/>
+</kw>
+<kw name="Input Credentials" library="resource">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<kw name="Input" library="AppLibrary">
+<arg>${username}</arg>
+<status status="PASS" starttime="20231118 15:53:21.931" endtime="20231118 15:53:21.932"/>
+</kw>
+<kw name="Input" library="AppLibrary">
+<arg>${password}</arg>
+<status status="PASS" starttime="20231118 15:53:21.932" endtime="20231118 15:53:21.932"/>
+</kw>
+<kw name="Run Application" library="AppLibrary">
+<status status="PASS" starttime="20231118 15:53:21.932" endtime="20231118 15:53:21.932"/>
+</kw>
+<status status="PASS" starttime="20231118 15:53:21.931" endtime="20231118 15:53:21.932"/>
+</kw>
+<kw name="Output Should Contain" library="AppLibrary">
+<arg>Logged in</arg>
+<status status="PASS" starttime="20231118 15:53:21.932" endtime="20231118 15:53:21.932"/>
+</kw>
+<status status="PASS" starttime="20231118 15:53:21.930" endtime="20231118 15:53:21.932"/>
+</test>
+<test id="s1-s1-t2" name="Login With Incorrect Password" line="10">
+<kw name="Create User And Input Login Command" type="SETUP">
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" starttime="20231118 15:53:21.933" endtime="20231118 15:53:21.933"/>
+</kw>
+<kw name="Input Login Command" library="resource">
+<kw name="Input" library="AppLibrary">
+<arg>login</arg>
+<status status="PASS" starttime="20231118 15:53:21.933" endtime="20231118 15:53:21.933"/>
+</kw>
+<status status="PASS" starttime="20231118 15:53:21.933" endtime="20231118 15:53:21.934"/>
+</kw>
+<status status="PASS" starttime="20231118 15:53:21.933" endtime="20231118 15:53:21.934"/>
+</kw>
+<kw name="Input Credentials kalle wrongpassword">
+<msg timestamp="20231118 15:53:21.935" level="FAIL">No keyword with name 'Input Credentials kalle wrongpassword' found. Did you try using keyword 'AppLibrary.Input' or 'resource.Input Credentials' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20231118 15:53:21.935" endtime="20231118 15:53:21.935"/>
+</kw>
+<kw name="Output Should Contain Incorrect password">
+<status status="NOT RUN" starttime="20231118 15:53:21.936" endtime="20231118 15:53:21.936"/>
+</kw>
+<status status="FAIL" starttime="20231118 15:53:21.933" endtime="20231118 15:53:21.936">No keyword with name 'Input Credentials kalle wrongpassword' found. Did you try using keyword 'AppLibrary.Input' or 'resource.Input Credentials' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-s1-t3" name="Login With Nonexistent Username" line="14">
+<kw name="Create User And Input Login Command" type="SETUP">
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" starttime="20231118 15:53:21.937" endtime="20231118 15:53:21.937"/>
+</kw>
+<kw name="Input Login Command" library="resource">
+<kw name="Input" library="AppLibrary">
+<arg>login</arg>
+<status status="PASS" starttime="20231118 15:53:21.937" endtime="20231118 15:53:21.937"/>
+</kw>
+<status status="PASS" starttime="20231118 15:53:21.937" endtime="20231118 15:53:21.937"/>
+</kw>
+<status status="PASS" starttime="20231118 15:53:21.936" endtime="20231118 15:53:21.937"/>
+</kw>
+<kw name="Input Credentials nonexistentuser password">
+<msg timestamp="20231118 15:53:21.938" level="FAIL">No keyword with name 'Input Credentials nonexistentuser password' found. Did you try using keyword 'AppLibrary.Input' or 'resource.Input Credentials' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20231118 15:53:21.938" endtime="20231118 15:53:21.938"/>
+</kw>
+<kw name="Output Should Contain User not found">
+<status status="NOT RUN" starttime="20231118 15:53:21.939" endtime="20231118 15:53:21.939"/>
+</kw>
+<status status="FAIL" starttime="20231118 15:53:21.936" endtime="20231118 15:53:21.939">No keyword with name 'Input Credentials nonexistentuser password' found. Did you try using keyword 'AppLibrary.Input' or 'resource.Input Credentials' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<status status="FAIL" starttime="20231118 15:53:21.924" endtime="20231118 15:53:21.940"/>
+</suite>
+<status status="FAIL" starttime="20231118 15:53:21.894" endtime="20231118 15:53:21.940"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="2" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="2" skip="0" id="s1-s1" name="Login">Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
