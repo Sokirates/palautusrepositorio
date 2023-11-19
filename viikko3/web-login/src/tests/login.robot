@@ -26,8 +26,6 @@ Login With Nonexistent Username
 
 
 *** Keywords ***
-Login Should Succeed
-    Main Page Should Be Open
 
 Login Should Fail With Message
     [Arguments]  ${message}

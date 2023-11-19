@@ -36,6 +36,30 @@ Register With Nonmatching Password And Password Confirmation
     Submit Registeration Credentials
     Registeration Should Fail With Message  Password and password confirmation didn't match
 
+Login After Succesful Registeration
+    Set Username  hiiis
+    Set Password  hiiis123
+    Set Password Confirmation  hiiis123
+    Submit Registeration Credentials
+
+    Go To Login Page
+    Set Username  hiiis
+    Set Password  hiiis123
+    Submit Login Credentials
+    Login Should Succeed
+
+Login After Failed Registeration
+    Set Username  a
+    Set Password  moiiiii8
+    Set Password Confirmation  moiiiii8
+    Submit Registeration Credentials
+
+    Go To Login Page
+    Set Username  a
+    Set Password  moiiiii8
+    Submit Login Credentials
+    Login Should Fail With Message  Invalid username or password
+
 ** Keywords ***
 Registeration Should Succeed
     Welcome Page Should Be Open
@@ -45,5 +69,11 @@ Registeration Should Fail With Message
     Register Page Should Be Open
     Page Should Contain  ${message}
 
+Login Should Fail With Message  
+    [Arguments]  ${message}
+    Login Page Should Be Open
+    Page Should Contain  ${message}
+
 Submit Registeration Credentials
     Click Button  Register
+

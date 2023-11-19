@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.10.12 on linux)" generated="20231118 13:34:24.339" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.10.12 on linux)" generated="20231118 16:46:44.892" rpa="false" schemaversion="4">
 <suite id="s1" name="Tests" source="/home/tasoki/palautusrepositorio/viikko3/hello-robot/src/tests">
 <suite id="s1-s1" name="Increase Counter" source="/home/tasoki/palautusrepositorio/viikko3/hello-robot/src/tests/increase_counter.robot">
 <test id="s1-s1-t1" name="Increase Counter Once" line="5">
 <kw name="Counter Value Should Be" library="CounterLibrary">
 <arg>0</arg>
-<status status="PASS" starttime="20231118 13:34:24.357" endtime="20231118 13:34:24.357"/>
+<status status="PASS" starttime="20231118 16:46:44.910" endtime="20231118 16:46:44.910"/>
 </kw>
 <kw name="Increase Counter" library="CounterLibrary">
-<status status="PASS" starttime="20231118 13:34:24.357" endtime="20231118 13:34:24.358"/>
+<status status="PASS" starttime="20231118 16:46:44.910" endtime="20231118 16:46:44.911"/>
 </kw>
 <kw name="Counter Value Should Be" library="CounterLibrary">
 <arg>1</arg>
-<status status="PASS" starttime="20231118 13:34:24.358" endtime="20231118 13:34:24.358"/>
+<status status="PASS" starttime="20231118 16:46:44.911" endtime="20231118 16:46:44.911"/>
 </kw>
-<status status="PASS" starttime="20231118 13:34:24.357" endtime="20231118 13:34:24.358"/>
+<status status="PASS" starttime="20231118 16:46:44.910" endtime="20231118 16:46:44.911"/>
 </test>
 <test id="s1-s1-t2" name="Increase Counter Many Times" line="10">
 <kw name="Counter Value Should Be" library="CounterLibrary">
 <arg>0</arg>
-<status status="PASS" starttime="20231118 13:34:24.358" endtime="20231118 13:34:24.358"/>
+<status status="PASS" starttime="20231118 16:46:44.911" endtime="20231118 16:46:44.911"/>
 </kw>
 <kw name="Increase Counter" library="CounterLibrary">
-<status status="PASS" starttime="20231118 13:34:24.359" endtime="20231118 13:34:24.359"/>
+<status status="PASS" starttime="20231118 16:46:44.911" endtime="20231118 16:46:44.912"/>
 </kw>
 <kw name="Increase Counter" library="CounterLibrary">
-<status status="PASS" starttime="20231118 13:34:24.359" endtime="20231118 13:34:24.359"/>
+<status status="PASS" starttime="20231118 16:46:44.912" endtime="20231118 16:46:44.912"/>
 </kw>
 <kw name="Increase Counter" library="CounterLibrary">
-<status status="PASS" starttime="20231118 13:34:24.359" endtime="20231118 13:34:24.359"/>
+<status status="PASS" starttime="20231118 16:46:44.912" endtime="20231118 16:46:44.912"/>
 </kw>
 <kw name="Counter Value Should Be" library="CounterLibrary">
 <arg>3</arg>
-<status status="PASS" starttime="20231118 13:34:24.359" endtime="20231118 13:34:24.359"/>
+<status status="PASS" starttime="20231118 16:46:44.912" endtime="20231118 16:46:44.912"/>
 </kw>
-<status status="PASS" starttime="20231118 13:34:24.358" endtime="20231118 13:34:24.359"/>
+<status status="PASS" starttime="20231118 16:46:44.911" endtime="20231118 16:46:44.912"/>
 </test>
 <test id="s1-s1-t3" name="Increment Counter By Amount" line="17">
 <kw name="Counter Value Should Be" library="CounterLibrary">
 <arg>0</arg>
-<status status="PASS" starttime="20231118 13:34:24.360" endtime="20231118 13:34:24.360"/>
+<status status="PASS" starttime="20231118 16:46:44.912" endtime="20231118 16:46:44.912"/>
 </kw>
 <kw name="Increment Counter By" library="CounterLibrary">
 <arg>5</arg>
-<status status="PASS" starttime="20231118 13:34:24.360" endtime="20231118 13:34:24.360"/>
+<status status="PASS" starttime="20231118 16:46:44.913" endtime="20231118 16:46:44.913"/>
 </kw>
 <kw name="Counter Value Should Be" library="CounterLibrary">
 <arg>5</arg>
-<status status="PASS" starttime="20231118 13:34:24.360" endtime="20231118 13:34:24.360"/>
+<status status="PASS" starttime="20231118 16:46:44.913" endtime="20231118 16:46:44.913"/>
 </kw>
-<status status="PASS" starttime="20231118 13:34:24.359" endtime="20231118 13:34:24.360"/>
+<status status="PASS" starttime="20231118 16:46:44.912" endtime="20231118 16:46:44.913"/>
 </test>
-<status status="PASS" starttime="20231118 13:34:24.354" endtime="20231118 13:34:24.360"/>
+<status status="PASS" starttime="20231118 16:46:44.907" endtime="20231118 16:46:44.913"/>
 </suite>
-<status status="PASS" starttime="20231118 13:34:24.340" endtime="20231118 13:34:24.361"/>
+<status status="PASS" starttime="20231118 16:46:44.893" endtime="20231118 16:46:44.914"/>
 </suite>
 <statistics>
 <total>

@@ -51,3 +51,8 @@ Set Password Confirmation
     [Arguments]  ${password_confirmation}
     Input Password  password_confirmation  ${password_confirmation}
 
+Login Should Succeed
+    Main Page Should Be Open
+
+Submit Login Credentials
+    Click Button  Login
