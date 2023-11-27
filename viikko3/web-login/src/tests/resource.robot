@@ -37,7 +37,7 @@ Welcome Page Should Be Open
     Title Should Be  Welcome to Ohtu Application!
 
 Go To Registeration Page
-    Go To  ${REGISTER URL}
+    Go To  ${REGISTER_URL}
 
 Set Username
     [Arguments]  ${username}
