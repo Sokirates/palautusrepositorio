@@ -112,5 +112,4 @@ class Kumoa:
         self.sovelluslogiikka = sovelluslogiikka
 
     def suorita(self):
-        luku1 = int(self.io())
-        luku2 = int(self.io())
+        self.sovelluslogiikka.kumoa()
